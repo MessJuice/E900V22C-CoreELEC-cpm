@@ -2,10 +2,11 @@
 # 确保以 root 执行，或 sudo ./build.sh
 
 version="21.3-Omega"
-source_img="CoreELEC-Amlogic-ng.arm-${version}-Generic.img.gz"
+# CPM A14 镜像的文件名和下载链接
+source_img="CoreELEC-Amlogic-ng.arm-21.3-Omega_devel_20251109182642-Generic.A14.img.gz"
 img=${source_img%.gz}
-url="https://github.com/CoreELEC/CoreELEC/releases/download/${version}/${source_img}"
-target="CoreELEC-Amlogic-ng.arm-${version}-E900V22C-$(date +%Y.%m.%d).img"
+url="https://github.com/simonhust/cpm-a14-xbmc/releases/download/A14-Kodi.21.3/${source_img}"
+target="CoreELEC-Amlogic-ng.arm-${version}-E900V22C-CPM-A14-$(date +%Y.%m.%d).img"
 mount="target"
 common="common-files"
 
